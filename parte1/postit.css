@@ -1,0 +1,55 @@
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-evenly;
+    height: 100vh;
+    background-color: gray;
+}
+
+#container div {
+    display: flex;
+    width: 22%;
+    height: 35%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-evenly;
+    box-shadow: 5px 5px 10px 0px #000000;
+    text-shadow: 1px 1px 1px rgba(146, 146, 146, 0.8)
+}
+
+h1 {
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+p {
+    font-size: xx-large;
+}
+
+#postit1,
+#postit5,
+#postit7 {
+    background: linear-gradient(rgb(255, 255, 204) 0%, rgb(227, 227, 183) 75%, rgb(198, 198, 165) 93%);
+    transform: rotate(355deg);
+}
+
+#postit2,
+#postit4,
+#postit8 {
+    background: linear-gradient(rgb(204, 255, 204) 0%, rgb(184, 219, 184) 75%, rgb(146 180 146) 93%);
+    transform: rotate(5deg);
+}
+
+#postit3,
+#postit6 {
+    background: linear-gradient(rgb(204, 204, 255) 0%, rgb(176, 176, 204) 75%, rgb(147 147 186) 93%);
+    transform: rotate(350deg);
+}
+
+#container div:hover {
+    transform: rotate(0deg);
+    transform: scale(1.2,1.2);
+}
